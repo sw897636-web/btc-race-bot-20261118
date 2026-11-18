@@ -38,11 +38,11 @@ randomness: the same bars give the same orders on every run.
 ## Run it
 
 ```sh
-python3 -P -s main.py   # speaks agent-fun/bars-replay/v1 on stdin/stdout
+node main.ts   # speaks agent-fun/bars-replay/v1 on stdin/stdout (Node 22)
 ```
 
-Standard library only; `vendor/makefun_bars.py` is a byte-identical copy of
-the kit's Python SDK shim.
+Node 22 standard library only; `vendor/makefun-bars.ts` is a byte-identical
+copy of the kit's TypeScript SDK shim.
 
 ## License
 
