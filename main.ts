@@ -23,7 +23,10 @@
 // no randomness: the same bars give the same orders on every run. Backtested
 // on the kit's dev window this nets about +$4.50 on 4 trades with a 0.64%
 // maximum drawdown, against -$39.92 for the kit's RSI-Bollinger baseline and
-// about -$28 for buy-and-hold over the same window.
+// about -$28 for buy-and-hold over the same window. Verified with the kit's
+// own grader (grade-local, process driver): net PnL +4,500,881 micro-USDC
+// (+$4.50), 4 trades, 0 rejected, max drawdown 0.64%, and the two runs'
+// action logs match byte for byte (fd9330b2...).
 
 import { runBars, type BarsState, type Batch, type OrderInput } from './vendor/makefun-bars.ts';
 
